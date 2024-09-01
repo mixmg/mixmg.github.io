@@ -110,21 +110,13 @@ button:hover {
     left: 0;
     width: 300px; /* Width of your image */
     height: 300px; /* Height of your image */
-    background-image: url('dvd-logo.png');
+    background-image: url('background-logo.png'); /* Update to the correct image path */
     background-size: contain; /* Ensures the image scales proportionally */
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.1; /* High transparency */
     z-index: -1; /* Places it behind other content */
-    animation: move-background 15s linear infinite; /* Adjust timing as needed */
-}
-
-/* Keyframes for Background Image Animation */
-@keyframes move-background {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(calc(100vw - 100px), calc(50vh - 100px)); }
-    50% { transform: translate(calc(50vw - 100px), calc(100vh - 100px)); }
-    75% { transform: translate(calc(0), calc(50vh - 100px)); }
-    100% { transform: translate(calc(0), calc(0)); }
+    animation: move-background 20s linear infinite; /* Adjust timing as needed */
 }
 
 /* Responsive Design */
