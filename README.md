@@ -2,7 +2,7 @@
 
 ## Overview
 
-This web application calculates values for the AbstractQbit's Radial Follow Smoothing plugin. Input width and height to get various smoothing parameters with a responsive design and engaging loading animation.
+Calculator uses predefined coefficients to compute the smoothing parameters. The formulas aim to approximate the ideal values by applying fixed multipliers to the input dimensions.
 
 ## Usage
 
