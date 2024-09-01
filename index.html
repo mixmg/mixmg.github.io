@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbstractQbit's Radial Follow Smoothing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+    <script src="loading.js" defer></script>
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <h1>AbstractQbit's Radial Follow Smoothing Calculator</h1>
+    <div class="container">
+        <form>
+            <label for="width">Width (mm):</label>
+            <input type="number" id="width" step="0.01" required>
+            
+            <label for="height">Height (mm):</label>
+            <input type="number" id="height" step="0.01" required>
+            
+            <label for="aspect-ratio">Aspect Ratio:</label>
+            <input type="text" id="aspect-ratio" readonly>
+            
+            <button type="submit" id="calculate-button">Calculate</button>
+            
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Calculating...</p>
+            </div>
+            
+            <div id="results" class="hidden">
+                <h2>Results:</h2>
+                <label>Outer Radius:</label>
+                <span id="outer-radius">0.00000</span>
+                
+                <label>Inner Radius:</label>
+                <span id="inner-radius">0.00000</span>
+                
+                <label>Initial Smoothing Coefficient:</label>
+                <span id="initial-smoothing">0.00000</span>
+                
+                <label>Soft Knee Scale:</label>
+                <span id="soft-knee-scale">0.00000</span>
+                
+                <label>Smoothing Leak Coefficient:</label>
+                <span id="smoothing-leak-coefficient">0.00000</span>
+            </div>
+        </form>
+    </div>
+    <!-- Background Image Container -->
+    <div class="background-image"></div>
+</body>
+</html>
