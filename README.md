@@ -16,13 +16,14 @@ This calculator computes smoothing parameters using predefined coefficients. It 
    - **Smoothing Leak Coefficient**
 4. You can toggle the **Smaller Cursor Lag, Less Precision** checkbox to adjust the smoothing settings.
 
-## Output Parameters
+## Output Parameters Explained
 
-- **Outer Radius**: The maximum distance the cursor can lag behind the actual reading.
-- **Inner Radius**: The maximum distance the tablet reading can deviate from the cursor without moving it.
-- **Initial Smoothing Coefficient**: The initial coefficient for smoothing calculations.
-- **Soft Knee Scale**: Determines the softness of the transition between smoothing inside and outside the outer radius.
-- **Smoothing Leak Coefficient**: Allows for input smoothing to continue past the outer radius at a reduced rate.
+- **Outer Radius**: Represents the maximum distance from the center point within which the cursor's position is smoothed. Beyond this radius, smoothing is applied at a reduced rate.
+- **Inner Radius**: Defines a smaller circular region where the pen's movement is precisely tracked by the cursor without any delay or smoothing effect. This is the range where the cursor is most responsive to the pen's movements.
+- **Initial Smoothing Coefficient**: The base value that determines the strength of smoothing when the pen's movement is within the inner radius. Higher values result in stronger initial smoothing.
+- **Soft Knee Scale**: Controls how smoothly the transition occurs between the inner and outer radii. A higher value results in a more gradual change from precise movement to smooth movement.
+- **Smoothing Leak Coefficient**: Allows the smoothing effect to extend slightly beyond the outer radius, but at a diminishing rate. This parameter ensures that there isn't a sharp cutoff in smoothing, which could cause jittery movements.
+
 
 
 ## Getting Help
