@@ -30,6 +30,3 @@ This calculator computes smoothing parameters using predefined coefficients. It 
 
 <<<<<<< HEAD
 If you have any questions or issues, please reach out via GitHub Issues.
-=======
-If you have any questions or issues, please reach out via GitHub Issues.
->>>>>>> af9c758c0ab5ceea1991e67eaecd6cf0470e7995
