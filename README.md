@@ -28,5 +28,4 @@ This calculator computes smoothing parameters using predefined coefficients. It 
 
 ## Getting Help
 
-<<<<<<< HEAD
 If you have any questions or issues, please reach out via GitHub Issues.
