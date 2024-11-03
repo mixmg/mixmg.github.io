@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <meta name="description" content="AbstractQbit's Radial Follow Smoothing Calculator for Osu! allows players to optimize gameplay by adjusting cursor smoothing and precision. Perfect tool for Osu! enthusiasts.">
-    <meta name="keywords" content="Osu, Osu! calculator, radial follow smoothing, cursor smoothing, Osu gameplay optimization, precision, AbstractQbit, Osu tools, GitHub Pages, open source tools">
-    <meta name="author" content="AbstractQbit">
-
-    <title>AbstractQbit's Radial Follow Smoothing Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="calculator">
-        <h1>AbstractQbit's Radial Follow Smoothing Calculator</h1>
-        <form id="calculator-form">
-            <label for="width">Width:</label>
-            <input type="number" id="width" name="width" step="0.01" required>
-
-            <label for="height">Height:</label>
-            <input type="number" id="height" name="height" step="0.01" required>
-
-            <label for="aspect-ratio">Aspect Ratio:</label>
-            <input type="text" id="aspect-ratio" name="aspect-ratio" readonly>
-
-            <button type="submit">Calculate</button>
-        </form>
-
-        <div class="checkbox-container">
-            <input type="checkbox" id="smoothing-toggle">
-            <label for="smoothing-toggle">Smaller Cursor Lag, Less Precision</label>
-        </div>
-
-        <div id="loading" class="hidden">
-            <div class="spinner"></div>
-        </div>
-
-        <div id="results" class="hidden">
-            <p>Outer Radius: <strong id="outer-radius"></strong></p>
-            <p>Inner Radius: <strong id="inner-radius"></strong></p>
-            <p>Initial Smoothing Coefficient: <strong id="initial-smoothing"></strong></p>
-            <p>Soft Knee Scale: <strong id="soft-knee-scale"></strong></p>
-            <p>Smoothing Leak Coefficient: <strong id="smoothing-leak-coefficient"></strong></p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixmg's Tools and Calculators</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta
+      name="description"
+      content="Mixmg's collection of osu! tools and calculators to optimize gameplay and performance."
+    />
+    <meta
+      name="keywords"
+      content="osu!, tools, calculators, osu optimization, performance, Mixmg, GitHub Pages, open source tools"
+    />
+    <meta name="author" content="Mixmg" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mixmg's Tools and Blog</h1>
+      <p>This is my collection of osu! related stuff</p>
+      <ul>
+        <li>
+          <a href="/smoothing/smoothing-calculator.html">
+            <button class="styled-button">
+              Radial Follow Smoothing Calculator
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="/density/density-calculator.html">
+            <button class="styled-button">Osu! Density Calculator</button>
+          </a>
+        </li>
+        <li>
+          <a href="/blog/blog.html">
+            <button class="styled-button">Blog</button>
+          </a>
+        </li>
+      </ul>
     </div>
-    <script src="calculator.js"></script>
-</body>
+  </body>
 </html>

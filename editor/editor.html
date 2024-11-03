@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixmg's Blog Editor</title>
+    <link rel="stylesheet" href="/editor/editor.css" />
+    <script src="/editor/editor.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edytor Postów na Bloga</h1>
+      <form id="postForm">
+        <label for="postTitle">Tytuł:</label>
+        <input type="text" id="postTitle" required />
+
+        <label for="postContent">Treść:</label>
+        <div class="toolbar">
+          <button type="button" id="bold" title="Pogrubienie (Ctrl + B)">
+            B
+          </button>
+          <button type="button" id="italic" title="Kursywa (Ctrl + I)">
+            I
+          </button>
+          <button type="button" id="link" title="Link (Ctrl + K)">🔗</button>
+          <button type="button" id="imageUpload" title="Wstaw obraz">🖼️</button>
+        </div>
+
+        <!-- Zmiana textarea na contentEditable -->
+        <div
+          id="postContent"
+          contenteditable="true"
+          rows="10"
+          required
+          style="border: 1px solid #ccc; padding: 10px; min-height: 200px"
+        ></div>
+
+        <label for="imageUrl">URL Obrazu:</label>
+        <input
+          type="url"
+          id="imageUrl"
+          placeholder="http://example.com/image.jpg"
+        />
+        <button type="button" id="addImage">Dodaj Obraz</button>
+        <button type="submit" class="styled-button">Zapisz Post</button>
+      </form>
+      <div id="message"></div>
+    </div>
+  </body>
+</html>
