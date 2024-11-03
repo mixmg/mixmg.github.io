@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const objectsPerBeat = bpm / 60;
     const totalStreamObjects =
       ((objectsPerBeat * arTime) / 1000) * timeSignature;
-    const totalJumpObjects = totalStreamObjects / 2; // Jump objects typically placed every other beat
+    const totalJumpObjects = totalStreamObjects / 2;
 
     streamDensityOutput.textContent = totalStreamObjects.toFixed(2);
     jumpDensityOutput.textContent = totalJumpObjects.toFixed(2);
