@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>BPM Test</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="description" content="BPM Test." />
+    <meta
+      name="keywords"
+      content="BPM, calculator, osu, clicks, rhythm game, Mixmg"
+    />
+    <meta name="author" content="Mixmg" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="/smoothing/smoothing-calculator.html"
+            >Smoothing Calculator</a
+          >
+        </li>
+        <li>
+          <a href="/density/density-calculator.html">Density Calculator</a>
+        </li>
+        <li><a href="/bpm/bpm-calculator.html">BPM Test</a></li>
+      </ul>
+    </nav>
+
+    <div class="calculator">
+      <h1>BPM Test</h1>
+      <div class="container">
+        <button id="button1">Button 1</button>
+      </div>
+      <div class="container">
+        <button id="button2">Button 2</button>
+      </div>
+      <div class="container">
+        <label for="duration">Duration (in seconds):</label>
+        <input
+          type="number"
+          id="duration"
+          min="1"
+          placeholder="Enter duration in seconds"
+        />
+      </div>
+      <div id="message" class="hidden">
+        Press one of the buttons to start the test.
+      </div>
+      <div id="timer" class="hidden">
+        Time Remaining: <span id="time-remaining">0</span> seconds
+      </div>
+      <div id="result"></div>
+      <div id="unstable-rate"></div>
+      <!-- Dodaj ten element -->
+      <button id="begin-test">Begin Test</button>
+      <button id="reset-test">Reset Test</button>
+    </div>
+    <script src="bpm-calculator.js"></script>
+  </body>
+</html>
