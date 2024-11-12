@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       arTime = 1800 - ar * 120;
     }
 
+
     const objectsPerBeat = bpm / 60;
     const totalStreamObjects =
       ((objectsPerBeat * arTime) / 1000) * timeSignature;
